@@ -24,25 +24,55 @@ export default function Footer() {
 
   return (
     <>
+      {/* Seção CTA Final */}
       <section className="py-24 md:py-32 bg-bg-warm">
         <div className="max-w-2xl mx-auto px-6 md:px-12 text-center">
+
           <div data-aos="zoom-in">
             <h2 className="font-serif text-3xl md:text-4xl text-heading font-medium leading-snug mb-4 max-w-xl mx-auto">
               Se você chegou até aqui, provavelmente já sabe que algo precisa ser compreendido.
             </h2>
-            <p className="font-sans text-sm font-light text-text-main/70 mb-10">A agenda do Renato é limitada. Se houver disponibilidade, você saberá na conversa inicial.</p>
-            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-block font-sans text-sm font-medium text-white bg-primary px-10 py-4 rounded-sm hover:bg-primary-dark transition-all duration-200 tracking-wide" style={{ boxShadow: '0 8px 24px rgba(43,95,126,0.35)' }}>
+            <p className="font-sans text-sm font-light text-text-main/70 mb-10">
+              Minha agenda é limitada. Se houver disponibilidade, você saberá na conversa inicial.
+            </p>
+
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-sans text-sm font-medium text-white bg-primary px-10 py-4 rounded-sm hover:bg-primary-dark transition-all duration-200 tracking-wide"
+              style={{ boxShadow: '0 8px 24px rgba(43,95,126,0.35)' }}
+            >
               Quero entender se esse processo é para mim
             </a>
           </div>
+
         </div>
       </section>
+
+      {/* Rodapé */}
       <footer className="bg-heading py-8">
         <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
-          <p className="font-sans text-xs font-light text-white/40 tracking-wide">© 2026 Renato Gimenez — Psicólogo CRP — Todos os direitos reservados</p>
+          <p className="font-sans text-xs font-light text-white/40 tracking-wide">
+            © 2026 Renato Gimenez — Psicólogo CRP — Todos os direitos reservados
+          </p>
         </div>
       </footer>
-      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 md:hidden flex items-center gap-2 bg-secondary text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300" style={{ opacity: showFloating ? 1 : 0, transform: showFloating ? 'translateY(0)' : 'translateY(16px)', pointerEvents: showFloating ? 'auto' : 'none', boxShadow: '0 8px 24px rgba(26,46,59,0.2)' }} aria-label="Falar com Renato no WhatsApp">
+
+      {/* Botão WhatsApp flutuante mobile */}
+      <a
+        href={WA_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 md:hidden flex items-center gap-2 bg-secondary text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300"
+        style={{
+          opacity: showFloating ? 1 : 0,
+          transform: showFloating ? 'translateY(0)' : 'translateY(16px)',
+          pointerEvents: showFloating ? 'auto' : 'none',
+          boxShadow: '0 8px 24px rgba(26,46,59,0.2)',
+        }}
+        aria-label="Falar com Renato no WhatsApp"
+      >
         <WhatsAppIcon />
         <span className="font-sans text-xs font-medium tracking-wide">Sessão inicial</span>
       </a>
