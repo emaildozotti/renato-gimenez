@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const WA_LINK = 'https://wa.me/5567912998724?text=Ol%C3%A1%20Renato!%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho.'
+const WA_LINK = 'https://wa.me/556791299874?text=Ol%C3%A1%20Renato!%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho.'
 
 function WhatsAppIcon() {
   return (
